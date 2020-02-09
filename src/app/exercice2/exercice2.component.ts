@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-exercice2',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice2Component implements OnInit {
 
-  constructor() { }
+  count: number = 0;
+
+  constructor() {
+  }
+
 
   ngOnInit() {
+  }
+
+  onClick(): void  {
+    this.count ++;
+    console.log('clic', this.count);
   }
 
 }
